@@ -3,7 +3,7 @@ package com.tahlia.annotation.annotationUtil;
 import android.app.Activity;
 import android.view.View;
 
-import com.tahlia.annotation.annotation.BindView;
+import com.tahlia.annotation.annotation.BindViewReflect;
 
 import java.lang.reflect.Field;
 
@@ -12,8 +12,8 @@ public class BindUtils {
         Class<? extends Activity> aClass = activity.getClass();
         Field[] declaredFields = aClass.getDeclaredFields();
         for (Field field : declaredFields) {
-            if (field.isAnnotationPresent(BindView.class)) {
-                BindView annotation = field.getAnnotation(BindView.class);
+            if (field.isAnnotationPresent(BindViewReflect.class)) {
+                BindViewReflect annotation = field.getAnnotation(BindViewReflect.class);
                 int id = annotation.value();
                 View viewById = activity.findViewById(id);
                 field.setAccessible(true);

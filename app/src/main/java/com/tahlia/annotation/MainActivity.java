@@ -8,21 +8,19 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-import com.tahlia.annotation.annotation.BindView;
-import com.tahlia.annotation.annotation.ForTest;
-import com.tahlia.annotation.annotation.IntentExtra;
+import com.tahlia.annotation.annotation.BindViewReflect;
 import com.tahlia.annotation.annotationUtil.BindUtils;
 
-//@AllMethod
+@AllMethod
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     @BindView(R.id.tv_hello_world)
     private TextView mainTv;
 
-    @BindView(R.id.GoIntent)
+    @BindViewReflect(R.id.GoIntent)
     private Button mGoIntent;
 
-    @BindView(R.id.NoIntent)
+    @BindViewReflect(R.id.NoIntent)
     private Button mNoIntent;
 
     @Override
