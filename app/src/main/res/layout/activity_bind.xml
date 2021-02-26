@@ -4,33 +4,33 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".retention_runtime.bind.BindActivity">
 
-    <Button
-        android:id="@+id/btn_bind_invoke"
+    <TextView
+        android:id="@+id/tv_1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="BIND_INVOKE"
+        android:text="Text 1"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/btn_intent"
+    <TextView
+        android:id="@+id/tv_2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="PARSE_INTENT"
+        android:text="Text 2"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/btn_bind_invoke" />
+        app:layout_constraintTop_toBottomOf="@id/tv_1" />
 
-    <Button
-        android:id="@+id/btn_bind_apt"
+    <TextView
+        android:id="@+id/tv_3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="BIND_APT"
+        android:text="Text 3"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/btn_intent" />
+        app:layout_constraintTop_toBottomOf="@id/tv_2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

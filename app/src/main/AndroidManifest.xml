@@ -9,9 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Main3Activity"></activity>
-        <activity android:name=".Main2Activity" />
-        <activity android:name=".LoginTest.LoginActivity" />
+
+        <activity android:name=".retention_source.apt.AptActivity" />
+        <activity android:name=".retention_source.apt.BindAptActivity" />
+        <activity android:name=".retention_source.check.CheckEntranceActivity" />
+        <activity android:name=".retention_runtime.bind.BindActivity" />
+        <activity android:name=".retention_runtime.intent.IntentActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

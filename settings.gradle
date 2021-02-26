@@ -1,4 +1,4 @@
 rootProject.name='Annotation'
 include ':app'
 include ':annotation'
-include ':apt-annotation'
+include ':apt'
