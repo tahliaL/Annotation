@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
+        <activity android:name=".retention_runtime.type.TypeActivity"></activity>
         <activity android:name=".retention_source.apt.AptActivity" />
         <activity android:name=".retention_source.apt.BindAptActivity" />
         <activity android:name=".retention_source.check.CheckEntranceActivity" />

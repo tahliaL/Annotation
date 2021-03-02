@@ -11,6 +11,7 @@ import com.tahlia.annotation.retention_runtime.bind.BindActivity;
 import com.tahlia.annotation.retention_runtime.intent.IntentActivity;
 import com.tahlia.annotation.retention_runtime.intent.StudentParcelable;
 import com.tahlia.annotation.retention_runtime.intent.StudentSerializable;
+import com.tahlia.annotation.retention_runtime.type.TypeActivity;
 import com.tahlia.annotation.retention_source.apt.AptActivity;
 import com.tahlia.annotation.retention_source.apt.BindAptActivity;
 
@@ -33,6 +34,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         intentBtn.setOnClickListener(this);
         Button bindAptBtn = findViewById(R.id.btn_bind_apt);
         bindAptBtn.setOnClickListener(this);
+        Button typeBtn = findViewById(R.id.btn_generic_type);
+        typeBtn.setOnClickListener(this);
     }
 
     @Override
@@ -57,6 +60,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.btn_bind_apt:
                 startActivity(new Intent(MainActivity.this, BindAptActivity.class));
+                break;
+            case R.id.btn_generic_type:
+                startActivity(new Intent(MainActivity.this, TypeActivity.class));
                 break;
         }
     }

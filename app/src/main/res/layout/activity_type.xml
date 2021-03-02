@@ -4,42 +4,42 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".retention_runtime.type.TypeActivity">
 
     <Button
-        android:id="@+id/btn_bind_invoke"
+        android:id="@+id/parameterizedType_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="BIND_INVOKE"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="ParameterizedType"/>
 
     <Button
-        android:id="@+id/btn_intent"
+        android:id="@+id/typeVariable_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="PARSE_INTENT"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/btn_bind_invoke" />
+        app:layout_constraintTop_toBottomOf="@id/parameterizedType_btn"
+        android:text="TypeVariable"/>
 
     <Button
-        android:id="@+id/btn_bind_apt"
+        android:id="@+id/genericArrayType_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="BIND_APT"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/btn_intent" />
+        app:layout_constraintTop_toBottomOf="@id/typeVariable_btn"
+        android:text="GenericArrayType"/>
 
     <Button
-        android:id="@+id/btn_generic_type"
+        android:id="@+id/wildcardType_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="GENERIC_TYPE"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/btn_bind_apt" />
+        app:layout_constraintTop_toBottomOf="@id/genericArrayType_btn"
+        android:text="WildcardType"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
